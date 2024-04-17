@@ -14,10 +14,10 @@ hero:
       link: /fe/html/html
     - theme: alt
       text: github.io
-      link: https://brucecqm.github.io/bruceblogpages/
+      link: https://brucecqm.github.io/
     - theme: alt
       text: gitee.io
-      link: https://brucecai55520.gitee.io/bruceblogpages/
+      link: https://brucecai55520.gitee.io/
 
 features:
   - icon: ⚡️
