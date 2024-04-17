@@ -19,16 +19,16 @@ const getSearchParams = (url) => {
   }, {})
 }
 
-// { name: 'bruce', type: 'blog' }
-getSearchParams('https://www.example.com?name=bruce&type=blog')
+// { name: 'Leo', type: 'blog' }
+getSearchParams('https://www.example.com?name=Leo&type=blog')
 ```
 
 ### 利用 `URLSearchParams`
 
 ```js
-const searchParams = new URLSearchParams('name=bruce&type=blog')
+const searchParams = new URLSearchParams('name=Leo&type=blog')
 
-searchParams.get('name') // 'bruce'
+searchParams.get('name') // 'Leo'
 searchParams.has('type') // true
 ```
 
@@ -37,16 +37,16 @@ searchParams.has('type') // true
 `entries()` 方法返回一个 `iterator`，还需进一步转换为对象。
 
 ```js
-Object.fromEntries(searchParams.entries()) // { name: 'bruce', type: 'blog' }
+Object.fromEntries(searchParams.entries()) // { name: 'Leo', type: 'blog' }
 ```
 
 需要注意的是，`URLSearchParams` 只能解析查询字符串，不能解析完整的 URL。因此若要使用其解析查询参数，需要事先提取出 URL 地址的查询字符串。
 
 ```js
-const params = new URLSearchParams('https://www.example.com?name=bruce&type=blog')
+const params = new URLSearchParams('https://www.example.com?name=Leo&type=blog')
 
 params.get('name') // null
-params.get('https://www.example.com?name') // 'bruce'
+params.get('https://www.example.com?name') // 'Leo'
 ```
 
 [MDN-URLSearchParams](https://developer.mozilla.org/zh-CN/docs/Web/API/URLSearchParams){link=card}
@@ -54,10 +54,10 @@ params.get('https://www.example.com?name') // 'bruce'
 ### 利用 `URL`
 
 ```js
-const params = new URL('https://www.example.com?name=bruce&type=blog')
+const params = new URL('https://www.example.com?name=Leo&type=blog')
 const searchParams = params.searchParams
 
-searchParams.get('name') // 'bruce'
+searchParams.get('name') // 'Leo'
 searchParams.get('type') // 'blog'
 ```
 

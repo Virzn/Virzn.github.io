@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: BruceBlog
+  name: LeoBlog
   text: 一名前端er的学习笔记
   tagline: 既往不恋，纵情向前
   image:
@@ -14,10 +14,10 @@ hero:
       link: /fe/html/html
     - theme: alt
       text: github.io
-      link: https://brucecqm.github.io/
+      link: https://Leocqm.github.io/
     - theme: alt
       text: gitee.io
-      link: https://brucecai55520.gitee.io/
+      link: https://Leocai55520.gitee.io/
 
 features:
   - icon: ⚡️

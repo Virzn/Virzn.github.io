@@ -1,6 +1,6 @@
 # VuePress 从 0 开始搭建个人网站
 
-:::tip BruceBlog 从无到有的全过程
+:::tip LeoBlog 从无到有的全过程
 Vitepress 也是类似的过程，偷懒不写了 :grin:
 
 [VuePress 官网传送门](https://vuepress.vuejs.org/zh/)
@@ -13,8 +13,8 @@ Vitepress 也是类似的过程，偷懒不写了 :grin:
 1. 创建并进入新目录
 
 ```bash
-mkdir bruceblog
-cd bruceblog
+mkdir Leoblog
+cd Leoblog
 ```
 
 2. 初始化 npm
@@ -58,7 +58,7 @@ npm run dev
 
 ## 目录结构
 
-以下为 BruceBlog 部分目录结构，比较重要的是 `.vuepress` 目录的结构。官方目录结构请移步 [→](https://vuepress.vuejs.org/zh/guide/directory-structure.html)
+以下为 LeoBlog 部分目录结构，比较重要的是 `.vuepress` 目录的结构。官方目录结构请移步 [→](https://vuepress.vuejs.org/zh/guide/directory-structure.html)
 
 ```shell
 .
@@ -110,9 +110,9 @@ module.exports = {
   // 自定义网站 favicon
   head: [['link', { rel: 'icon', href: '/img/logo.png' }]],
   // 根路径，和仓库名一致
-  base: '/bruceblog/',
+  base: '/Leoblog/',
   // 左上角标题
-  title: 'BruceBlog',
+  title: 'LeoBlog',
   // markdown 相关配置
   markdown: {
     // 代码块行号
@@ -138,7 +138,7 @@ module.exports = {
     // 默认值是 true 。设置为 false 来禁用所有页面的 上一篇 链接
     prevLinks: true,
     // 导航栏显示 gitee 仓库
-    repo: 'https://gitee.com/brucecai55520/bruceblog',
+    repo: 'https://gitee.com/Leocai55520/Leoblog',
     repoLabel: 'Gitee',
   },
 }
@@ -152,7 +152,7 @@ module.exports = {
 ---
 home: true
 heroImage: /img/logo.png
-heroText: BruceBlog
+heroText: LeoBlog
 tagline: 一名前端er的学习笔记
 actionText: Get Started →
 actionLink: /notes/
@@ -163,7 +163,7 @@ features:
     details: 计算机网络、数据结构、操作系统...
   - title: 杂七杂八
     details: 前端面试常见的面试题、资源推荐...
-footer: Oh this is BruceBlog
+footer: Oh this is LeoBlog
 ---
 ```
 
@@ -199,7 +199,7 @@ module.exports = [
 
 ## 侧边栏
 
-BruceBlog 为不同页面显示不同的侧边栏，并且每个页面的侧边栏封装为一个模块便于后续维护。
+LeoBlog 为不同页面显示不同的侧边栏，并且每个页面的侧边栏封装为一个模块便于后续维护。
 
 以 Vue 页面的侧边栏为例：
 
@@ -293,12 +293,12 @@ style={ { key: value } }
 
 ```js
 module.exports = {
-  // 仓库名为 bruceblog
-  base: '/bruceblog/',
+  // 仓库名为 Leoblog
+  base: '/Leoblog/',
 }
 ```
 
-2. 在 `bruceblog` 目录下运行打包命令
+2. 在 `Leoblog` 目录下运行打包命令
 
 ```bash
 npm run build
@@ -315,7 +315,7 @@ cd docs/.vuepress/dist
 ```bash
 git init
 git add -A
-git commit -m 'init bruceblog' -a
+git commit -m 'init Leoblog' -a
 ```
 
 5. 为远程仓库起别名
@@ -340,7 +340,7 @@ git push origin master:pages
 
 8. 选择部署分支，并开启 Gitee Pages 服务
 
-至此，BruceBlog 的搭建大功告成！:tada::smile:
+至此，LeoBlog 的搭建大功告成！:tada::smile:
 
 ## 更新网站内容
 

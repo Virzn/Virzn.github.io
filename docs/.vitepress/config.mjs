@@ -56,7 +56,7 @@ export default {
   // 根路径，和仓库名一致
   base,
   // 左上角标题
-  title: 'BruceBlog',
+  title: 'LeoBlog',
   // 爬虫爬取的内容
   description: '前端学习-面试题-资源导航-Vue-React-Node',
   // 设置展示最后修改时间
@@ -82,11 +82,11 @@ export default {
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/BruceCQM'
+        link: 'https://github.com/LeoCQM'
       },
       {
         icon: { svg: giteeFavicon, },
-        link: 'https://gitee.com/brucecai55520'
+        link: 'https://gitee.com/Leocai55520'
       },
       { icon: { svg: juejinFavicon }, link: 'https://juejin.cn/user/4152185650162680' },
       { icon: { svg: sfFavicon }, link: 'https://segmentfault.com/u/ning_643b67be37ac3/articles' },
@@ -99,11 +99,11 @@ export default {
     // 设置底部的版权声明，只有左边侧边栏不存在才会展示
     footer: {
       message: 'If there is any reprint or CV, please mark the original address of this website',
-      copyright: 'Copyright © 2023-present BruceBlog'
+      copyright: 'Copyright © 2023-present LeoBlog'
     },
     // 设置编辑页面链接
     editLink: {
-      pattern: 'https://github.com/BruceCQM/bruceblog',
+      pattern: 'https://github.com/LeoCQM/Leoblog',
       text: 'Edit this page on GitHub'
     },
     // 设置上下篇文字
@@ -118,7 +118,7 @@ export default {
     algolia: {
       appId: 'D174SMAAP9',
       apiKey: 'ff5a5ad8bd3ceb6f5c330b0fde865725',
-      indexName: 'brucepages',
+      indexName: 'Leopages',
       placeholder: '快乐搜索吧',
       translations: {
         button: {

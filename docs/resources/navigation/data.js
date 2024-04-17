@@ -497,7 +497,7 @@ export default [
       {
         icon: 'https://www.logosc.cn/img/logo-icons/logosc.svg?v=1',
         title: '标小智',
-        desc: '智能 LOGO 设计生成器，BruceBlog 的 logo 在此生成',
+        desc: '智能 LOGO 设计生成器，LeoBlog 的 logo 在此生成',
         link: 'https://www.logosc.cn/'
       },
       {

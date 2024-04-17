@@ -24,7 +24,7 @@ window.localStorage instanceof Storage // true
 ```js
 // 以 localStorage 为例，sessionStorage 都一样
 // 添加数据
-localStorage.setItem('name', 'BruceBlog')
+localStorage.setItem('name', 'LeoBlog')
 localStorage.setItem('age', 2333)
 
 // 修改数据

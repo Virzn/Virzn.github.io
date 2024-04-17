@@ -1,5 +1,5 @@
 ---
-layoutClass: bruceblog-navigation
+layoutClass: Leoblog-navigation
 outline: [2, 3, 4]
 ---
 
