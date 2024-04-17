@@ -65,3 +65,12 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment  # 指定id
         uses: actions/deploy-pages@v2 # 将之前的构建产物部署到github pages中
+      - name: Sync to Gitee
+        uses: wearerequired/git-mirror-action@v1.2.0
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+        with:
+          # GitHub 仓库地址
+          source-repo: git@github.com:Virzn/Virzn.github.io.git
+          # Gitee 仓库地址
+          destination-repo: git@gitee.com:Vireoz/vireoz.git
