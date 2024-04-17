@@ -19,7 +19,7 @@
 │ └── index.html: 主页面
 ├── src
 │ ├── assets: 存放静态资源
-│ │ └── logo.png
+│ │ └── Licon.svg
 │ │── component: 存放组件
 │ │ └── HelloWorld.vue
 │ │── App.vue: 汇总所有组件

@@ -3,30 +3,28 @@ layout: home
 
 hero:
   name: LeoBlog
-  text: 一名前端er的学习笔记
-  tagline: 既往不恋，纵情向前
+  text: 我的学习笔记
+  tagline: -------------------------------
   image:
-    src: /logo.png
+    src: /Licon.svg
     alt: Logo
   actions:
-    - theme: brand
-      text: Getting Started
-      link: /fe/html/html
-    - theme: alt
-      text: github.io
-      link: https://Leocqm.github.io/
-    - theme: alt
-      text: gitee.io
-      link: https://Leocai55520.gitee.io/
+    - text: 工具库
+      link: /resources/navigation/nav
+    - text: 前端学习
+      link: /nav/
+      theme: alt
+    - text: mmPlayer
+      link: https://netease-music.fe-mm.com
 
-features:
-  - icon: ⚡️
-    title: 前端知识
-    details: HTML、CSS、JavaScript、Vue、React...
-  - icon: 📖
-    title: 计算机基础
-    details: 计算机网络、操作系统、数据结构...
-  - icon: 🧰
-    title: 知也无涯
-    details: 面试题、资源导航...
+# features:
+#   - icon: ⚡️
+#     title: 前端知识
+#     details: HTML、CSS、JavaScript、Vue、React...
+#   - icon: 📖
+#     title: 计算机基础
+#     details: 计算机网络、操作系统、数据结构...
+#   - icon: 🧰
+#     title: 知也无涯
+#     details: 面试题、资源导航...
 ---

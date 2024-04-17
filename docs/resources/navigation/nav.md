@@ -13,7 +13,8 @@ import data from './data'
 # 站点导航
 
 :::tip 鸣谢
-感谢 [maomao](https://github.com/maomao1996/vitepress-fe-nav) 对导航页面的开源与教学！[掘金文章](https://juejin.cn/post/7204860462239498296)
+感谢 [maomao](https://github.com/maomao1996/vitepress-fe-nav) 对导航页面的开源与教学！[掘金文章](https://juejin.cn/post/7204860462239498296)<br>
+感谢 [Bruce](https://brucecai55520.gitee.io/bruceblogpages/) 提供页面及部分数据资源！
 :::
 
 <NavLinks v-for="{title, items} in data" :title="title" :items="items"/>

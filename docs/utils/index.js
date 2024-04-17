@@ -1,4 +1,4 @@
-const defaultLogo = '/logo.png';
+const defaultLogo = '/Licon.svg';
 
 /**
  * @description 从所给的URL中提取标题、摘要、图片等信息
@@ -88,7 +88,7 @@ function replaceInnerHTML(el, info) {
 
   el.innerHTML = `
   <article class="essay-content">
-    <img class="icon" src="${icon}" alt="${title}" onerror="this.src='/logo.png'">
+    <img class="icon" src="${icon}" alt="${title}" onerror="this.src='/Licon.svg'">
     <div class="essay-text">
       <div class="essay-title">${title}</div>
       <div class="essay-link">${desc}</div>

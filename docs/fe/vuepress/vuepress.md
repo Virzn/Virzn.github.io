@@ -108,7 +108,7 @@ module.exports = {
   // 插件：置顶按钮、图片缩放
   plugins: ['@vuepress/back-to-top', '@vuepress/medium-zoom'],
   // 自定义网站 favicon
-  head: [['link', { rel: 'icon', href: '/img/logo.png' }]],
+  head: [['link', { rel: 'icon', href: '/img/Licon.svg' }]],
   // 根路径，和仓库名一致
   base: '/Leoblog/',
   // 左上角标题
@@ -121,7 +121,7 @@ module.exports = {
   // 默认主题相关配置
   themeConfig: {
     // 配置左上角的 logo
-    logo: '/img/logo.png',
+    logo: '/img/Licon.svg',
     // 导航栏
     nav: require('./nav.js'),
     // 侧边栏
@@ -151,7 +151,7 @@ module.exports = {
 ```yaml
 ---
 home: true
-heroImage: /img/logo.png
+heroImage: /img/Licon.svg
 heroText: LeoBlog
 tagline: 一名前端er的学习笔记
 actionText: Get Started →

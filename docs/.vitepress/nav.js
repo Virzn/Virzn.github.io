@@ -1,13 +1,5 @@
 export default [
   {
-    text: '随笔杂谈',
-    link: '/magazine/weekly2023'
-  },
-  {
-    text: '资源集中营',
-    link: '/resources/navigation/nav'
-  },
-  {
     text: '前端学习',
     items: [
       {
@@ -31,11 +23,13 @@ export default [
           { text: 'Echarts', link: '/projects/echarts/headline' },
         ]
       },
-    ]
+    ],
+    activeMatch: '^/fe'
   },
   {
     text: '面试宝典',
-    link: '/interview/javascript'
+    link: '/interview/netCalcInter',
+    activeMatch: '^/interview'
   },
   {
     text: '知也无涯',
@@ -59,5 +53,9 @@ export default [
         ]
       },
     ]
+  },
+  {
+    text: '站点分享',
+    link: '/resources/navigation/nav'
   },
 ]

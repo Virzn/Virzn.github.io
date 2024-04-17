@@ -70,7 +70,7 @@ http://localhost:3000/css/style.css
 http://localhost:3000/js/login.js
 
 通过带有 /Leo 前缀的地址访问 Leo 目录下的文件
-http://localhost:8080/Leo/images/logo.png
+http://localhost:8080/Leo/images/Licon.svg
 */
 ```
 

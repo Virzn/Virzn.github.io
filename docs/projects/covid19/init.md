@@ -15,7 +15,7 @@ src
 .
 │
 ├── assets: 存放静态资源
-│ └── logo.png
+│ └── Licon.svg
 │
 │── component: 存放一般组件
 │

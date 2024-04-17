@@ -204,7 +204,7 @@ export default [
         link: 'https://element.eleme.cn/#/zh-CN'
       },
       {
-        icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
+        icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/Licon.svg',
         title: 'Vant',
         desc: '有赞团队轻量、可定制的移动端 Vue 组件库',
         link: 'https://vant-contrib.gitee.io/vant/#/zh-CN'
@@ -216,7 +216,7 @@ export default [
         link: 'https://didi.github.io/cube-ui/#/zh-CN'
       },
       {
-        icon: 'https://file.iviewui.com/view-design-logo.png',
+        icon: 'https://file.iviewui.com/view-design-Licon.svg',
         title: 'View Design',
         desc: '基于 Vue3 的企业级 UI 组件库和中后台系统解决方案',
         link: 'https://www.iviewui.com/'
