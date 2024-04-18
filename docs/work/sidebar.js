@@ -9,12 +9,12 @@ export default [
       { text: '日常开发工具', link: '/work/tools' },
     ]
   },
-  {
-    text: '地图开发',
-    collapsed: true,
-    items: [
-      { text: '小程序开发之坑', link: '/work/wx/wx_points' },
-      { text: '微信小程序地图开发教程', link: '/work/wx/wx_map' },
-    ]
-  },
+  // {
+  //   text: '地图开发',
+  //   collapsed: true,
+  //   items: [
+  //     { text: '小程序开发之坑', link: '/work/wx/wx_points' },
+  //     { text: '微信小程序地图开发教程', link: '/work/wx/wx_map' },
+  //   ]
+  // },
 ]

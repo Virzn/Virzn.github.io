@@ -10,13 +10,13 @@
 
 总宽度：	width+padding+border+margin
 
-![img](https://cdn.jsdelivr.net/gh/Virzn/PicBlog@master/img/1676876934541-937676b5-71bc-4759-ae4a-b3a26fba3f00.png)
+![img](./images/content-box.png)
 
 IE盒模型	width = content+padding+border；	height = content+padding+border
 
 总宽度：	width+margin
 
-![img](https://cdn.jsdelivr.net/gh/Virzn/PicBlog@master/img/1676876913691-9c468d8f-f6ee-4263-8db6-9e0b07e80e8b.png)
+![img](./images/border-box.png)
 
 控制盒模型的模式：box-sizing:content-box(默认，标准盒模型)、border-box(IE盒模型)、inherit(继承父盒子)
 
@@ -45,6 +45,31 @@ display:inline;转换为行内元素；设置宽高无效，垂直方向margin�
 display:block;转换为块状元素；设置宽高有效，margin/padding水平垂直方向都有效
 
 display:inline-block;转换为行内块状元素。设置宽高有效，margin/padding水平垂直方向都有效
+
+### css中长度单位
+
+1. **像素（px）**：像素是相对长度单位，通常用于网页布局和元素尺寸的定义。1 像素（pixel）是显示器上的一个最小点，通常对应于屏幕上的一个物理像素。
+2. **百分比（%）**：百分比单位相对于父元素的相关属性进行计算，例如宽度、高度、内边距和外边距等。可以使元素的大小相对于父元素或其他参考元素进行自适应调整。
+3. **相对长度单位**：
+
+- - **em**：相对于父元素字体大小的倍数，1em 等于父元素的字体大小。
+  - **rem**：相对于根元素（即 **<html>** 元素）字体大小的倍数，1rem 等于根元素的字体大小。
+  - **vw（视窗宽度）**：相对于视口宽度的百分比，1vw 等于视口宽度的 1%。
+  - **vh（视窗高度）**：相对于视口高度的百分比，1vh 等于视口高度的 1%。
+  - **vmin**：相对于视口宽度和高度中较小值的百分比。
+  - **vmax**：相对于视口宽度和高度中较大值的百分比。
+
+1. **绝对长度单位**：
+
+- - **in**（英寸）、**cm**（厘米）、**mm**（毫米）、**pt**（点）、**pc**（派卡）：物理尺寸单位，通常用于打印样式表中。
+  - **px**（像素）：通常被视为绝对长度单位，但在一些高分辨率屏幕中可能表现为相对长度单位。
+
+1. **其他单位**：
+
+- - **角度单位**：deg（度）、rad（弧度）、grad（梯度）。
+  - **时间单位**：s（秒）、ms（毫秒）。
+  - **频率单位**：Hz（赫兹）、kHz（千赫兹）。
+  - **分辨率单位**：dpi（每英寸点数）、dpcm（每厘米点数）、dppx（每像素点数）。
 
 ### 重绘和重排(回流)
 

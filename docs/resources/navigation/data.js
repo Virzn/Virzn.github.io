@@ -2,12 +2,12 @@ export default [
   {
     title: '技术博客',
     items: [
-      {
-        icon: 'https://awps-assets.meituan.net/mit/blog/v20190629/asset/icon/android-icon-192x192.png?v=Whistle&t=20181017-1r',
-        title: '美团技术团队',
-        desc: '美团的技术研究文章分享',
-        link: 'https://tech.meituan.com/'
-      },
+      // {
+      //   icon: 'https://awps-assets.meituan.net/mit/blog/v20190629/asset/icon/android-icon-192x192.png?v=Whistle&t=20181017-1r',
+      //   title: '美团技术团队',
+      //   desc: '美团的技术研究文章分享',
+      //   link: 'https://tech.meituan.com/'
+      // },
       {
         icon: 'https://www.ruanyifeng.com/favicon.ico',
         title: '阮一峰的网络日志',
@@ -21,22 +21,16 @@ export default [
         link: 'https://notes.fe-mm.com/'
       },
       {
+        icon: 'https://brucecai55520.gitee.io/bruceblogpages//favicon.ico',
+        title: 'BruceBlog',
+        desc: '一名前端er的学习笔记',
+        link: 'https://brucecai55520.gitee.io/bruceblogpages/'
+      },
+      {
         icon: 'https://xiaolincoding.com/icon.webp',
         title: '小林 coding',
         desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
         link: 'https://xiaolincoding.com/'
-      },
-      {
-        icon: 'https://p3-passport.byteimg.com/img/user-avatar/3cc59c2bbb4a99bcadc06cf1b1e2a4ca~180x180.awebp',
-        title: '冴羽的博客',
-        desc: '冴羽写博客的地方，预计写四个系列：JavaScript深入系列、JavaScript专题系列、ES6系列、React系列。',
-        link: 'https://github.com/mqyqingfeng/Blog'
-      },
-      {
-        icon: 'https://coolshell.cn/favicon.png',
-        title: '酷壳-CoolShell',
-        desc: '享受编程和技术所带来的快乐 – Coding Your Ambition',
-        link: 'https://coolshell.cn/'
       },
     ]
   },
@@ -74,7 +68,7 @@ export default [
         link: 'https://www.w3school.com.cn/index.html'
       },
       {
-        icon: 'https://static.runoob.com/images/favicon.ico',
+        icon: 'https://static.jyshare.com/images/favicon.ic',
         title: '菜鸟教程',
         desc: '学的不仅是技术，更是梦想！',
         link: 'https://www.runoob.com/'
@@ -139,19 +133,13 @@ export default [
         link: 'https://legacy.reactjs.org/'
       },
       {
-        icon: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
-        title: 'Ant Design',
-        desc: '一套企业级 UI 设计语言和 React 组件库',
-        link: 'https://ant.design/index-cn'
-      },
-      {
         icon: 'https://cn.redux.js.org/img/favicon/favicon.ico',
         title: 'Redux',
         desc: 'Redux 中文官网',
         link: 'https://cn.redux.js.org/'
       },
       {
-        icon: 'https://www.redux.org.cn/gitbook/images/favicon.ico',
+        icon: 'https://cn.redux.js.org/img/favicon/favicon.ico',
         title: 'Redux 中文文档',
         desc: '民间高手翻译的文档',
         link: 'https://www.redux.org.cn/n'
@@ -190,48 +178,6 @@ export default [
         title: 'Vue Router',
         desc: 'Vue.js 的官方路由',
         link: 'https://router.vuejs.org/zh/'
-      },
-      {
-        icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
-        title: 'Element Plus',
-        desc: '基于 Vue 3 面向设计师和开发者的组件库',
-        link: 'https://element-plus.org/zh-CN/'
-      },
-      {
-        icon: 'https://element.eleme.cn/favicon.ico',
-        title: 'Element',
-        desc: '基于 Vue 2.0 的桌面端组件库',
-        link: 'https://element.eleme.cn/#/zh-CN'
-      },
-      {
-        icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/Licon.svg',
-        title: 'Vant',
-        desc: '有赞团队轻量、可定制的移动端 Vue 组件库',
-        link: 'https://vant-contrib.gitee.io/vant/#/zh-CN'
-      },
-      {
-        icon: 'https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico',
-        title: 'Cube UI',
-        desc: '滴滴团队基于 Vue 实现的精致移动端组件库',
-        link: 'https://didi.github.io/cube-ui/#/zh-CN'
-      },
-      {
-        icon: 'https://file.iviewui.com/view-design-Licon.svg',
-        title: 'View Design',
-        desc: '基于 Vue3 的企业级 UI 组件库和中后台系统解决方案',
-        link: 'https://www.iviewui.com/'
-      },
-      {
-        icon: 'https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png',
-        title: 'Nut UI',
-        desc: '京东风格的轻量级移动端组件库',
-        link: 'https://nutui.jd.com/#/'
-      },
-      {
-        icon: 'https://aliyuncdn.antdv.com/favicon.ico',
-        title: 'Ant Design Vue',
-        desc: 'Ant Design 的 Vue 实现',
-        link: 'https://antdv.com/components/overview'
       },
     ]
   },
@@ -329,24 +275,60 @@ export default [
     ]
   },
   {
-    title: '小程序',
+    title: 'UI组件库',
     items: [
       {
-        icon: 'https://storage.360buyimg.com/pubfree-bucket/taro-docs/c07c6984de/img/logo-taro.png',
-        title: 'Taro',
-        desc: '开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝小程序/H5等应用',
-        link: 'https://taro-docs.jd.com/docs/'
+        icon: 'https://element-plus.org/images/element-plus-logo-small.svg',
+        title: 'Element Plus',
+        desc: '基于 Vue 3 面向设计师和开发者的组件库',
+        link: 'https://element-plus.org/zh-CN/'
       },
       {
-        icon: 'https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico',
-        title: '微信官方文档-小程序',
-        desc: '微信小程序官方文档',
-        link: 'https://developers.weixin.qq.com/miniprogram/dev/framework/'
+        icon: 'https://element.eleme.cn/favicon.ico',
+        title: 'Element',
+        desc: '基于 Vue 2.0 的桌面端组件库',
+        link: 'https://element.eleme.cn/#/zh-CN'
+      },
+      {
+        icon: 'https://fastly.jsdelivr.net/npm/@vant/assets/logo.png',
+        title: 'Vant',
+        desc: '有赞团队轻量、可定制的移动端 Vue 组件库',
+        link: 'https://vant-contrib.gitee.io/vant/#/zh-CN'
+      },
+      {
+        icon: 'https://webapp.didistatic.com/static/webapp/shield/Cube-UI_logo.ico',
+        title: 'Cube UI',
+        desc: '滴滴团队基于 Vue 实现的精致移动端组件库',
+        link: 'https://didi.github.io/cube-ui/#/zh-CN'
+      },
+      {
+        icon: 'https://file.iviewui.com/view-design-logo.png',
+        title: 'View Design',
+        desc: '基于 Vue3 的企业级 UI 组件库和中后台系统解决方案',
+        link: 'https://www.iviewui.com/'
+      },
+      {
+        icon: 'https://img14.360buyimg.com/imagetools/jfs/t1/167902/2/8762/791358/603742d7E9b4275e3/e09d8f9a8bf4c0ef.png',
+        title: 'Nut UI',
+        desc: '京东风格的轻量级移动端组件库',
+        link: 'https://nutui.jd.com/#/'
+      },
+      {
+        icon: 'https://aliyuncdn.antdv.com/favicon.ico',
+        title: 'Ant Design Vue',
+        desc: 'Ant Design 的 Vue 实现',
+        link: 'https://antdv.com/components/overview'
+      },
+      {
+        icon: 'https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png',
+        title: 'Ant Design',
+        desc: '一套企业级 UI 设计语言和 React 组件库',
+        link: 'https://ant.design/index-cn'
       },
     ]
   },
   {
-    title: '可视化',
+    title: '图表可视化',
     items: [
       {
         icon: 'https://echarts.apache.org/zh/images/favicon.png?_v_=20200710_1',
@@ -355,16 +337,10 @@ export default [
         link: 'https://echarts.apache.org/zh/index.html'
       },
       {
-        icon: 'https://antv.vision/favicon-32x32.png?v=9772447a8d07a8fe19894b5176c6cb0d',
+        icon: 'https://gw.alipayobjects.com/zos/antfincdn/FLrTNDvlna/antv.png',
         title: 'AntV',
         desc: '蚂蚁集团全新一代数据可视化解决方案',
         link: 'https://antv.vision/zh'
-      },
-      {
-        icon: 'https://charts.ant.design/favicon-32x32.png?v=9772447a8d07a8fe19894b5176c6cb0d',
-        title: 'Ant Design Charts',
-        desc: '简单好用的 React 图表库',
-        link: 'https://charts.ant.design/zh'
       },
       {
         icon: 'https://www.chartjs.org/favicon.ico',
@@ -430,6 +406,12 @@ export default [
         desc: '好用的在线图片压缩工具',
         link: 'https://tinypng.com/'
       },
+      {
+        icon: 'https://tools.pdf24.org/static/img/pdf24.png?v=658057a1',
+        title: 'PDF24 Tools',
+        desc: 'pdf工具',
+        link: 'https://tools.pdf24.org/zh/'
+      },
     ]
   },
   {
@@ -471,10 +453,28 @@ export default [
         link: 'https://www.iconfont.cn/'
       },
       {
-        icon: 'https://icomoon.io/favicon.ico',
-        title: 'IconMoon',
-        desc: '国外出品的图标库',
-        link: 'https://icomoon.io/'
+        icon: 'https://undraw.co/favicon.ico',
+        title: 'unDraw',
+        desc: '插画图库',
+        link: 'https://undraw.co/illustrations'
+      },
+      {
+        icon: 'https://loosedrawing.com/assets/base/images/favicon.ico',
+        title: 'Loose Drawing',
+        desc: '漫画风插画',
+        link: 'https://loosedrawing.com/tag/business/'
+      },
+      {
+        icon: 'https://illustrationkit.com/favicon-32x32.png',
+        title: 'illustrationkit',
+        desc: '优质手工插图',
+        link: 'https://illustrationkit.com/'
+      },
+      {
+        icon: 'https://error404.fun/img/favicon.png',
+        title: '404 illustrations',
+        desc: '404页面插图',
+        link: 'https://error404.fun/'
       },
       {
         icon: 'https://www.bitbug.net/favicon.ico',
@@ -505,58 +505,6 @@ export default [
         title: 'Shields.io',
         desc: 'GitHub 小徽章制作网站',
         link: 'https://shields.io/'
-      },
-    ]
-  },
-  {
-    title: '前端在线编程',
-    items: [
-      {
-        icon: 'https://static.jsbin.com/images/favicon.png',
-        title: 'JS Bin',
-        desc: 'JS 垃圾桶',
-        link: 'https://jsbin.com/?html,output'
-      },
-      {
-        icon: 'https://www.w3school.com.cn/ui2019/logo-48-red.png',
-        title: 'W3school',
-        desc: 'W3school 在线写前端代码',
-        link: 'https://www.w3school.com.cn/tiy/t.asp?f=eg_js_myfirstjs'
-      },
-      {
-        icon: 'https://static.runoob.com/images/favicon.ico',
-        title: '菜鸟教程',
-        desc: '菜鸟教程在线写前端代码',
-        link: 'https://www.runoob.com/try/try.php?filename=tryjs_events'
-      },
-      {
-        icon: 'https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico',
-        title: 'CODEPEN',
-        desc: '在线coding以及前端开发者社区',
-        link: 'https://codepen.io/'
-      },
-    ]
-  },
-  {
-    title: '知识管理',
-    items: [
-      {
-        icon: 'https://cn.vuejs.org/logo.svg',
-        title: 'VitePress',
-        desc: '基于 Vite 和 Vue 的静态网站生成器，简易、强大、高效。VuePress 的升级版',
-        link: 'https://vitepress.dev/'
-      },
-      {
-        icon: 'https://cn.vuejs.org/logo.svg',
-        title: 'VuePress',
-        desc: 'Vue 驱动的静态网站生成器',
-        link: 'https://vuepress.vuejs.org/zh/'
-      },
-      {
-        icon: 'https://docsify.js.org/_media/favicon.ico',
-        title: 'docsify',
-        desc: '一个神器的文档生成器',
-        link: 'https://docsify.js.org/#/'
       },
     ]
   },
@@ -608,12 +556,30 @@ export default [
         title: '网易公开课',
         desc: '网易公开课,公开课,网课,在线教育,教育,慕课,TED,纪录片',
         link: 'https://open.163.com/',
-      }
+      },
+      {
+        icon: 'https://www.bilibili.com/favicon.ico?v=1',
+        title: 'bilibili',
+        desc: 'bilibili大学',
+        link: 'https://open.163.com/',
+      },
     ]
   },
   {
     title: '这网站有点儿意思',
     items: [
+      {
+        icon: 'https://u9baoku.xyz/wp-content/uploads/2021/01/logo.png',
+        title: '悠久的小宝库',
+        desc: '各自软件资源宝库',
+        link: 'https://u9baoku.xyz/',
+      },
+      {
+        icon: 'https://axutongxue.com/favicon.ico',
+        title: '阿虚同学的储物间',
+        desc: '各种资源整理手机',
+        link: 'https://axutongxue.com/',
+      },
       {
         icon: 'https://adzhp.net/wp-content/uploads/2020/02/A-win.ico',
         title: '爱达杂货铺',

@@ -91,49 +91,49 @@ export default {
     darkModeSwitchLabel: '外观',
     sidebarMenuLabel: '菜单',
     returnToTopLabel: '返回顶部',
-    // algolia: {
-    //   appId: 'D174SMAAP9',
-    //   apiKey: 'ff5a5ad8bd3ceb6f5c330b0fde865725',
-    //   indexName: 'Leopages',
-    //   placeholder: '快乐搜索吧',
-    //   translations: {
-    //     button: {
-    //       buttonText: '搜索',
-    //       buttonAriaLabel: '搜索'
-    //     },
-    //     modal: {
-    //       searchBox: {
-    //         resetButtonTitle: '清除查询条件',
-    //         resetButtonAriaLabel: '清除查询条件',
-    //         cancelButtonText: '取消',
-    //         cancelButtonAriaLabel: '取消'
-    //       },
-    //       startScreen: {
-    //         recentSearchesTitle: '搜索历史',
-    //         noRecentSearchesText: '没有搜索历史',
-    //         saveRecentSearchButtonTitle: '保存至搜索历史',
-    //         removeRecentSearchButtonTitle: '从搜索历史中移除',
-    //         favoriteSearchesTitle: '收藏',
-    //         removeFavoriteSearchButtonTitle: '从收藏中移除'
-    //       },
-    //       errorScreen: {
-    //         titleText: '无法获取结果',
-    //         helpText: '你可能需要检查你的网络连接'
-    //       },
-    //       footer: {
-    //         selectText: '选择',
-    //         navigateText: '切换',
-    //         closeText: '关闭',
-    //         searchByText: '搜索提供者'
-    //       },
-    //       noResultsScreen: {
-    //         noResultsText: '无法找到相关结果',
-    //         suggestedQueryText: '你可以尝试查询',
-    //         reportMissingResultsText: '你认为该查询应该有结果？',
-    //         reportMissingResultsLinkText: '点击反馈'
-    //       }
-    //     }
-    //   }
-    // }
+    algolia: {
+      appId: 'GQLGTK0PME',
+      apiKey: 'd29b0bacbd90da87fe49bb4ec89f707b',
+      indexName: 'virznio',
+      placeholder: '输入关键字',
+      translations: {
+        button: {
+          buttonText: '搜索',
+          buttonAriaLabel: '搜索'
+        },
+        modal: {
+          searchBox: {
+            resetButtonTitle: '清除查询条件',
+            resetButtonAriaLabel: '清除查询条件',
+            cancelButtonText: '取消',
+            cancelButtonAriaLabel: '取消'
+          },
+          startScreen: {
+            recentSearchesTitle: '搜索历史',
+            noRecentSearchesText: '没有搜索历史',
+            saveRecentSearchButtonTitle: '保存至搜索历史',
+            removeRecentSearchButtonTitle: '从搜索历史中移除',
+            favoriteSearchesTitle: '收藏',
+            removeFavoriteSearchButtonTitle: '从收藏中移除'
+          },
+          errorScreen: {
+            titleText: '无法获取结果',
+            helpText: '你可能需要检查你的网络连接'
+          },
+          footer: {
+            selectText: '选择',
+            navigateText: '切换',
+            closeText: '关闭',
+            searchByText: '搜索提供者'
+          },
+          noResultsScreen: {
+            noResultsText: '无法找到相关结果',
+            suggestedQueryText: '你可以尝试查询',
+            reportMissingResultsText: '你认为该查询应该有结果？',
+            reportMissingResultsLinkText: '点击反馈'
+          }
+        }
+      }
+    }
   },
 }
