@@ -3,24 +3,24 @@ export default [
     text: '前端学习',
     items: [
       {
-        text: '扎马步',
+        text: '基础知识',
         items: [
-          { text: 'HTML / CSS', link: '/fe/css/css' },
-          { text: 'JavaScript', link: '/fe/js/what_is_js' },
-          { text: 'Vue', link: '/fe/vue/vue_core_basis' },
-          { text: 'React', link: '/fe/react/react_basis' },
-          { text: 'Nodejs', link: '/fe/nodejs/node_basis' },
-          { text: 'Git', link: '/fe/git/git' },
-          { text: 'Webpack', link: '/fe/webpack/webpack_basis' },
-          { text: 'Vscode', link: '/fe/ide/vscode' },
-          { text: '前端编程题', link: '/fe/js/coding_problem' },
+          { text: 'HTML', link: '/fe/html/html_intro', activeMatch: '^/fe/html', },
+          { text: 'CSS', link: '/fe/css/css', activeMatch: '^/fe/css', },
+          { text: 'JavaScript', link: '/fe/js/what_is_js', activeMatch: '^/fe/js', },
+          { text: 'Vue', link: '/fe/vue/vue_core_basis', activeMatch: '^/fe/vue', },
+          { text: 'React', link: '/fe/react/react_pre', activeMatch: '^/fe/react', },
+          { text: 'Nodejs', link: '/fe/nodejs/node_basis', activeMatch: '^/fe/nodejs', },
+          { text: 'Git', link: '/fe/git/git', activeMatch: '^/fe/html', },
+          { text: 'Webpack', link: '/fe/webpack/webpack_basis', activeMatch: '^/fe/webpack', },
+          { text: 'Vscode', link: '/fe/ide/vscode', activeMatch: '^/fe/vscode', },
         ]
       },
       {
         text: '项目',
         items: [
-          { text: 'COVID-19', link: '/projects/covid19/headline' },
-          { text: 'Echarts', link: '/projects/echarts/headline' },
+          // { text: 'COVID-19', link: '/projects/covid19/headline' },
+          // { text: 'Echarts', link: '/projects/echarts/headline' },
         ]
       },
     ],
@@ -31,13 +31,13 @@ export default [
     link: '/interview/netCalcInter',
     activeMatch: '^/interview'
   },
-  {
-    text: '知也无涯',
-    items: [
-      { text: '计算机基础', link: '/cs/network' },
-      { text: 'Python', link: '/lang/python/crawler' }
-    ]
-  },
+  // {
+  //   text: '知也无涯',
+  //   items: [
+  //     { text: '计算机基础', link: '/cs/network' },
+  //     { text: 'Python', link: '/lang/python/crawler' }
+  //   ]
+  // },
   {
     text: '高效搬砖',
     items: [

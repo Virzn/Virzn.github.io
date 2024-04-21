@@ -1,9 +1,22 @@
 export default [
   {
-    text: 'HTML / CSS',
+    text: 'HTML',
     collapsed: true,
     items: [
-      { text: 'HTML', link: '/fe/html/html' },
+      { text: 'HTML 简介', link: '/fe/html/html_intro' },
+      { text: '注释和实体', link: '/fe/html/annotations_entities' },
+      { text: '图片标签', link: '/fe/html/image_labels' },
+      { text: '超链接', link: '/fe/html/hyperlink' },
+      { text: '块元素和行内元素', link: '/fe/html/block_row' },
+      { text: '语义化标签', link: '/fe/html/semantic_tags' },
+      { text: '表格', link: '/fe/html/table' },
+      { text: '表单', link: '/fe/html/form' },
+    ]
+  },
+  {
+    text: ' CSS',
+    collapsed: true,
+    items: [
       { text: 'CSS', link: '/fe/css/css' },
       { text: 'Flex', link: '/fe/css/flex' },
       { text: 'Grid', link: '/fe/css/grid' },
@@ -39,7 +52,8 @@ export default [
     text: 'React',
     collapsed: true,
     items: [
-      { text: 'React 入门', link: '/fe/react/react_basis' },
+      { text: 'React 预知识', link: '/fe/react/react_pre' },
+      { text: 'React 入门', link: '/fe/react/react_start' },
       { text: 'React 面向组件编程', link: '/fe/react/react_for_components' },
       { text: 'React 脚手架', link: '/fe/react/react_cli' },
       { text: 'React 网络请求', link: '/fe/react/react_network_request' },
@@ -57,8 +71,12 @@ export default [
     items: [
       { text: 'Nodejs 基础', link: '/fe/nodejs/node_basis' },
       { text: 'Express', link: '/fe/nodejs/express' },
-      { text: '数据库和身份认证', link: '/fe/nodejs/mysql' },
-      { text: '大事件后台 API 项目', link: '/fe/nodejs/ev_api_server' },
+      { text: 'case v1.0', link: '/fe/nodejs/case1.0' },
+      { text: 'MongoDB', link: '/fe/nodejs/mongodb' },
+      { text: 'API 接口', link: '/fe/nodejs/api_server' },
+      { text: '会话控制', link: '/fe/nodejs/session_control' },
+      { text: 'Mysql', link: '/fe/nodejs/mysql' },
+
     ]
   },
   {
@@ -70,7 +88,6 @@ export default [
       { text: 'Vscode', link: '/fe/ide/vscode' },
       { text: 'Vuepress', link: '/fe/vuepress/vuepress' },
       { text: 'Vitepress', link: '/fe/vuepress/vitepress' },
-      { text: '前端编程题', link: '/fe/js/coding_problem' },
     ]
   },
 ]

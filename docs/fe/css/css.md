@@ -1,433 +1,286 @@
-# CSS 那些事儿
+# CSS简介
 
-## CSS 选择器
+## CSS定义介绍
 
-### 标签选择器
+CSS（Cascading Style Sheets）是一种用于描述网页样式和布局的语言。它与HTML结合使用，用于控制网页的外观和排版，使得网页具有更加美观和易读的视觉效果。以下是CSS的主要特点和用法：
 
-- 通过标签名选择元素
-- 优点：可快速为同类型标签统一设置样式
-- 缺点：不能涉及差异化样式，只能选择全部标签
+1. **样式定义**：CSS通过选择器（selector）和声明（declaration）的组合来定义样式。选择器用于选取要应用样式的HTML元素，而声明则定义了选中元素的具体样式属性和值。例如，设置段落文本的颜色为红色：
 
-```css
-h1 {
-  color: #ccc;
-}
-```
+   ```css
+   p {
+       color: red;
+   }
+   ```
 
-### 类选择器
+2. **层叠规则**：CSS具有层叠（cascading）的特性，即多个样式规则同时作用于同一个元素时，浏览器会按照一定的优先级和规则来确定最终的样式。这使得开发者能够通过简单的方式控制网页的样式，并在需要时进行覆盖或继承。
 
-- 通过类名选择元素
+3. **选择器**：CSS提供了丰富的选择器，用于选择不同类型的HTML元素，以及根据元素的属性、类名、ID等进行选择。常见的选择器包括元素选择器、类选择器、ID选择器、后代选择器、子元素选择器等。
 
-```css
-.container {
-  color: pink;
-}
-```
+4. **盒模型**：CSS中的元素都被视为一个矩形的盒子，称为盒模型。盒模型由内容区、内边距、边框和外边距组成，开发者可以通过CSS来控制这些部分的大小、颜色和样式，实现网页布局和排版的设计。
 
-### id 选择器
+5. **布局和定位**：CSS提供了丰富的布局和定位属性，包括浮动（float）、定位（position）、弹性盒子（flexbox）和网格布局（grid），用于实现响应式设计、多栏布局、居中对齐等各种布局效果。
 
-- 通过元素 id 属性选择元素
+6. **响应式设计**：随着移动设备的普及，响应式设计变得越来越重要。CSS通过媒体查询（media queries）和流式布局等技术，使得网页能够根据不同设备和屏幕尺寸的特点自动调整布局和样式，以提供更好的用户体验。
 
-```css
-#md {
-  font-weight: 600;
-}
-```
+7. **模块化和复用**：CSS支持样式的模块化和复用，开发者可以将样式定义在单独的文件中，并通过链接或导入的方式在HTML文档中引用，从而实现样式的分离和重用。
 
-### 通配符选择器
+总的来说，CSS是一种强大的样式表语言，与HTML和JavaScript一起构成了现代网页开发的三大核心技术之一。通过灵活运用CSS，开发者可以创建出美观、响应式和易于维护的网页，为用户提供更好的浏览体验。
 
-- 选择页面所有元素
-- 用于清除内外边距
 
-```css
-* {
-  padding: 0;
-  margin: 0;
-}
-```
+## CSS基本语法
 
-### 相邻选择器
+### 一、编写位置
 
-- 选择所有指定元素的相邻后一个兄弟节点
+CSS可以在HTML文档中的不同位置编写，通常有三种主要的编写位置：
+
+1. **内联样式（Inline Styles）**：
+   在HTML元素的`style`属性中直接编写CSS样式。这种方式适用于对单个元素应用特定样式的情况，但不推荐在整个网页中广泛使用，因为会导致HTML与CSS的耦合度增加，不利于样式的统一管理和维护。
+
+示例：
 
 ```html
-<h1>h1-2</h1>
-<p>p0 被选中</p>
-<div class="container">
-  <h1 class="good">h1</h1>
-  <p>p1 被选中</p>
-  <p>p2</p>
-</div>
+<p style="color: red; font-size: 16px;">这是一个红色的段落。</p>
 ```
 
-```css
-h1 + p {
-  text-decoration: underline;
-}
-```
+2. **内部样式表（Internal Styles）**：
+   在HTML文档的`<head>`标签中使用`<style>`标签来编写CSS样式。这种方式将CSS样式直接嵌入到HTML文档中，作用于整个文档内的元素，适用于小型网页或者特定页面需要的样式。
 
-### 后代选择器
-
-- 在所有后代节点中选
-
-```css
-ul li {
-  color: blue;
-}
-```
-
-### 子选择器
-
-- 只在亲儿子中选
-
-```css
-div > a {
-  color: green;
-}
-```
-
-### 并集选择器
-
-```css
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-```
-
-### 交集选择器
-
-```css
-/* good类的p元素 */
-p.good {
-  color: yellow;
-}
-```
-
-### 伪类选择器
-
-- 根据元素状态或所处 DOM 结构选择元素
-
-#### 动态伪类选择器
-
-```css
-按这个顺序声明
-a:link 链接一开始的样式
-a:visited 链接访问后的样式
-a:hover 光标经过链接的样式
-a:active 链接被按下时的样式
-
-:focus 用于选择获取焦点的表单元素，一般针对表单元素而言
-input:focus
-textarea:focus
-```
-
-#### 结构伪类选择器(C3)
-
-| 选择符           | 含义                  |
-| ---------------- | --------------------- |
-| E:first-child    | 第一个子元素 E        |
-| E:last-child     | 最后一个子元素 E      |
-| E:nth-child(n)   | 第 n 个子元素 E       |
-| E:first-of-type  | 指定元素 E 的第一个   |
-| E:last-of-type   | 指定元素 E 的最后一个 |
-| E:nth-of-type(n) | 指定元素 E 的第 n 个  |
-
-- n 可以是数字、关键字（even，odd）、公式（n 从 0 开始）
-- nth-child 先找父亲的第 n 个孩子，再看是否为元素 E，是成功，否失败
-- nth-of-type 是直接找第 n 个 E，忽略其他非 E 的元素
+示例：
 
 ```html
-<div>
-  <p>1</p>
-  <span>span</span>
-  <p>2</p>
-  <p>3</p>
-  <p>4</p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个蓝色的段落。</p>
+</body>
+</html>
 ```
+
+3. **外部样式表（External Styles）**：
+   将CSS样式单独保存在一个独立的`.css`文件中，然后在HTML文档中使用`<link>`标签将其链接到文档中。这种方式使得CSS样式可以被多个HTML文档共享，提高了样式的重用性和可维护性，是实际开发中常用的方式。
+
+示例（style.css）：
 
 ```css
-/* 啥都选不到 */
-div > p:nth-child(2) {
-  color: red;
-}
-/* 选到2号p标签 */
-div > p:nth-of-type(2) {
-  color: blue;
+/* style.css */
+p {
+    color: green;
+    font-size: 18px;
 }
 ```
 
-### 属性选择器(C3)
-
-| 选择符        | 含义                                          |
-| ------------- | --------------------------------------------- |
-| E[att]        | 选择具有 att 属性的 E 元素                    |
-| E[att="val"]  | 选择具有 att 属性且属性值等于 val 的 E 元素   |
-| E[att^="val"] | 选择具有 att 属性且属性值以 val 开头的 E 元素 |
-| E[att$="val"] | 选择具有 att 属性且属性值以 val 结尾的 E 元素 |
-| E[att*="val"] | 选择具有 att 属性且属性值含有 val 的 E 元素   |
-
-### 伪元素选择器(C3)
-
-- 伪元素选择器利用 CSS 创建新标签元素，而不需要 HTML 标签，从而简化 HTML 结构
-- before 和 after 创建了一个行内元素，在 DOM 树中无法找到，故为伪元素
-- 必须有 content 属性
-
-| 选择器   | 含义                   |
-| -------- | ---------------------- |
-| ::before | 在元素内部前面插入内容 |
-| ::after  | 在元素内部后面插入内容 |
-
-伪元素字体图标
-
-```css
-p::before {
-  content: '\e91e';
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  font-size: 20px;
-}
-```
-
-伪元素清除浮动
-
-```css
-1、额外标签法（隔墙法）
-在浮动元素后面添加一个块级标签（如div），并设置 clear: both
-
-<div style="clear:both" ></div>
-
-2、父级元素添加overflow，将其属性值设置为 hidden、 auto 或 scroll
-
-3、父级添加after伪元素
-.clearfix:after {
-  content: ""; 必须要有content属性
-  display: block; 块级元素
-  height: 0; 不要看见该元素
-  clear: both; 核心代码清除浮动
-  visibility: hidden; 不要看见该元素
-}
-.clearfix { /* IE6、 7 专有 */
-  *zoom: 1;
-}
-
-4、父级元素添加双伪元素
-.clearfix:before,.clearfix:after {
-  content:"";
-  display:table; 转换为块级元素并一行显示
-} .
-clearfix:after {
-  clear:both;
-} .
-clearfix {
-  *zoom:1;
-}
-```
-
-[相关链接](https://juejin.cn/post/6976646049456717838)
-
-## CSS Modules
-
-CSS 不是编程语言，是一种网页样式描述的手段。
-
-但程序员希望将其改造得像编程语言，于是 scss、less 出现了。
-
-而 CSS Modules 为 CSS 增加了**局部作用域**和**模块依赖**两个功能。
-
-### 局部作用域
-
-我们都知道，CSS 是全局生效的，每个组件的样式都会对全局起作用。
-
-要产生局部作用域，即避免样式冲突，就是使用唯一的类名。
-
-但我们无法保证自己的类名不会与别人重复。
-
-此时，CSS Modules 就有用武之地了。
-
-```css
-.title {
-  color: blue;
-}
-```
-
-```js
-import React from 'react';
-import style from './App.css';
-
-export default () => {
-  return (
-    <h1 className={style.title}>
-      Hello World
-    </h1>
-
-```
-
-`style.title` 会被构建工具编译成哈希字符串
+HTML文档中的链接：
 
 ```html
-<h1 class="_3zyde4l1yATCOkgn-DBWEL">Hello World</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <p>这是一个绿色的段落。</p>
+</body>
+</html>
 ```
 
-```css
-._3zyde4l1yATCOkgn-DBWEL {
-  color: red;
-}
-```
+总的来说，内联样式适用于个别元素的特殊样式需求，内部样式表适用于小规模的样式定义，而外部样式表则是更好的选择，可以提高代码的可维护性和重用性。
 
-这样，类名就是唯一的了。
+### 二、基本语法
 
-#### 相关链接
+1. **选择器（Selectors）**：
 
-[CSS Modules 用法教程](http://www.ruanyifeng.com/blog/2016/06/css_modules.html)
+   - 选择器用于选择 HTML 元素，并将样式应用于这些元素。
 
-## CSS 隐藏元素 :see_no_evil:
+   - 常见的选择器包括标签选择器、类选择器、ID 选择器、属性选择器等。
 
-#### 1、设置 `display: none`
+   - 例如：
 
-- 隐藏元素不再占有原来位置，因此会导致页面布局改变，引起重排
-- 子元素无法通过设置 `display: block` 实现反隐藏
-- 隐藏元素绑定的事件不会触发
+     ```css
+     p {
+         color: blue;
+     }
+     .my-class {
+         font-size: 16px;
+     }
+     #my-id {
+         background-color: gray;
+     }
+     ```
 
-#### 2、设置 `visibility: hidden`
+2. **属性（Properties）**：
 
-- 隐藏元素占有原来位置，实现的是视觉上的隐藏
-- 子元素可通过设置 `visibility: visible` 显示自己
-- 隐藏元素绑定的事件不会触发，如点击事件
+   - 属性是要设置的样式的名称。
 
-#### 3、设置 `opacity: 0`
+   - 每个属性都有一个相关的值，表示要应用的样式的具体值。
 
-- 通过设置透明度为 0 来隐藏元素，因此占有原来位置
-- 子元素无法通过设置 `opacity: 1` 显示自己
-- `opacity: 0` 的元素仍然能触发已绑定的事件
+   - 例如：
 
-#### 4、利用绝对定位 `position: absolute`
+     ```css
+     color: blue;
+     font-size: 16px;
+     background-color: gray;
+     ```
 
-- 将 `top` 和 `left` 设置为足够大的负数，使其离开屏幕，即可实现隐藏效果
-- 只要我跑得够远，你就看不到我 :stuck_out_tongue_winking_eye:
-- 绝对定位的元素是脱标的，不会影响页面布局
+3. **值（Values）**：
 
-#### 相关链接：
+   - 值是属性的具体设置值。
 
-[css 隐藏元素的几种方法是什么？](https://www.html.cn/qa/css3/14720.html)
+   - 值可以是关键字、长度、颜色、URL 等。
 
-## CSS 定位
+   - 例如：
 
-### 静态定位 static
+     ```css
+     color: blue;
+     font-size: 16px;
+     background-color: gray;
+     ```
 
-默认定位，相当于没有定位。
+4. **声明块（Declaration Blocks）**：
 
-### 相对定位 relative
+   - 一组属性及其对应的值被称为声明块，它们位于大括号 `{}` 中。
 
-- 相对于元素原本的位置进行偏移
-- 元素会浮起来，脱离标准流，但仍然占据原本的位置
+   - 例如：
 
-### 绝对定位 absolute
+     ```css
+     p {
+         color: blue;
+         font-size: 16px;
+     }
+     ```
 
-- 相对于最近的具有定位属性的父元素进行偏移，若没有，则相对于 `body` 进行偏移
-- 元素脱离标准流，且不占据原本的位置
-- 通常是“子绝父相”
+5. **注释（Comments）**：
 
-### 固定定位 fixed
+   - 注释在 CSS 中以 `/* */` 的形式书写，用于添加注释性文字，不会影响样式的应用。
 
-- 相对于浏览器窗口进行偏移
-- 不会随着浏览器窗口的滚动而滚动
-- 可用于创建固定头部、底部
+   - 例如：
 
-```css
-// 创建全屏遮罩
-.mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.25);
-}
-```
+     ```css
+     /* 这是一个注释 */
+     ```
 
-#### 相关链接
+6. **样式规则（Style Rules）**：
 
-[CSS 的几种定位详解](https://blog.csdn.net/weixin_38055381/article/details/81558288)
+   - 样式规则由选择器和声明块组成，用于将样式应用于特定的 HTML 元素。
 
-## CSS `:global`
+   - 例如：
 
-在 CSS 局部作用域覆盖默认样式。
+     ```css
+     p {
+         color: blue;
+         font-size: 16px;
+     }
+     ```
 
-如覆盖 Ant Design 组件的默认样式。
+7. **样式表（Style Sheets）**：
 
-```css
-// index.module.scss
+   - 样式表是一组 CSS 规则的集合，用于定义页面或网站的整体样式。
 
-.father {
-  color: green;
-}
+   - 样式表可以嵌入到 HTML 中的 `<style>` 标签中，也可以作为外部 CSS 文件引入。
 
-:global {
-  // antd 的默认样式被覆盖
-  .ant-form-head {
-    color: red;
-  }
-}
-```
+   - 例如：
 
-```jsx
-import { Form } from 'antd';
-import styles from './index.module.scss';
+     ```html
+     <style>
+         p {
+             color: blue;
+             font-size: 16px;
+         }
+     </style>
+     ```
 
-export default const Hello = () => {
-  return (
-    <Form>
-      <div className={styles.father}></div>
-    </Form>
-  )
-}
-```
-
-#### 相关链接
-
-[CSS 中的 global](https://blog.csdn.net/qq_36209248/article/details/90603474)
-
-## CSS 属性浏览器私有前缀
-
-```
-Google Chrome、Safari：-webkit-
-Firefox：-moz-
-IE：-ms-
-Opera：-o-
-```
-
-私有前缀是为了兼容老版本的浏览器。
-
-什么是兼容？可以简单理解为一段代码在新的浏览器能正常运行，在老版本的浏览器也能正常运行。
-
-对于一些新的 CSS 属性，老浏览器可能运行异常，通过添加私有前缀，让这个属性只在指定内核的浏览器生效，老浏览器就忽略这个属性。
-
-等到该属性成熟、所有浏览器都支持后，就可以去掉私有前缀。
-
-```css
-h1 {
-  font-size: 40px;
-  color: black;
-  -webkit-text-stroke: 2px red;
-}
-```
-
-#### 相关链接
-
-[浏览器的私有前缀理解](https://blog.csdn.net/Dreammin/article/details/104663120)
-
-[-moz、-ms、-webkit 浏览器私有前缀详解，作用、出处](https://blog.csdn.net/wyx100/article/details/50450728)
+以上是 CSS 的基本语法，通过这些语法规则，可以定义和控制 HTML 元素的样式，实现页面的布局和美化。
 
 
-## `break-all` 单词内换行
+## CSS选择器
 
-通过设置 `word-break: break-all;` 实现单词内换行。一长串数字或字母可以换行，不至于溢出盒子。
+CSS选择器是一种用于选择 HTML 元素的模式。它允许你根据元素的类型、属性、状态、位置等条件来选择要应用样式的元素。以下是一些常见的 CSS 选择器：
 
-```css
-.text {
-  word-break: break-all;
-}
-```
+1. **元素选择器**：通过 HTML 元素的标签名称选择元素。
+
+   ```css
+   p {
+       color: blue;
+   }
+   ```
+
+2. **类选择器**：通过 HTML 元素的 class 属性选择元素。
+
+   ```css
+   .my-class {
+       font-weight: bold;
+   }
+   ```
+
+3. **ID 选择器**：通过 HTML 元素的 id 属性选择元素。
+
+   ```css
+   #my-id {
+       background-color: yellow;
+   }
+   ```
+
+4. **属性选择器**：根据 HTML 元素的属性值来选择元素。
+
+   ```css
+   input[type="text"] {
+       border: 1px solid black;
+   }
+   ```
+
+5. **后代选择器**：选择元素的后代元素。
+
+   ```css
+   div p {
+       font-size: 16px;
+   }
+   ```
+
+6. **子元素选择器**：选择元素的直接子元素。
+
+   ```css
+   ul > li {
+       list-style-type: none;
+   }
+   ```
+
+7. **相邻兄弟选择器**：选择紧跟在另一个元素后的元素。
+
+   ```css
+   h2 + p {
+       margin-top: 20px;
+   }
+   ```
+
+8. **通用选择器**：选择所有元素。
+
+   ```css
+   * {
+       margin: 0;
+       padding: 0;
+   }
+   ```
+
+9. **伪类选择器**：根据元素的特殊状态来选择元素，比如链接的状态。
+
+   ```css
+   a:hover {
+       color: red;
+   }
+   ```
+
+10. **伪元素选择器**：用于选中元素的特定部分，比如元素的第一个字母或者某个元素之前的内容。
+
+    ```css
+    p::first-letter {
+        font-size: 24px;
+    }
+    ```
+

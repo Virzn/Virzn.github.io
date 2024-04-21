@@ -9,13 +9,13 @@ hero:
     src: /Licon.svg
     alt: Logo
   actions:
-    - text: 工具库
+    - text: 站点分享
       link: /resources/navigation/nav
     - text: 前端学习
-      link: /nav/
+      link: /fe/css/css
       theme: alt
-    - text: mmPlayer
-      link: https://netease-music.fe-mm.com
+    # - text: mmPlayer
+    #   link: https://netease-music.fe-mm.com
 
 # features:
 #   - icon: ⚡️

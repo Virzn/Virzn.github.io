@@ -32,6 +32,12 @@ export default [
         desc: '图解计算机网络、操作系统、计算机组成、数据库，让天下没有难懂的八股文！',
         link: 'https://xiaolincoding.com/'
       },
+      {
+        icon: 'https://blog.dselegent.icu/favicon.ico',
+        title: 'dselegent-blog',
+        desc: '博客分享，涉及前端、后端、应用、工具等分享',
+        link: 'https://blog.dselegent.icu/'
+      },
     ]
   },
   {
