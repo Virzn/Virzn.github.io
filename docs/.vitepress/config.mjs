@@ -79,7 +79,7 @@ export default {
     },
     // 设置编辑页面链接
     editLink: {
-      pattern: 'https://github.com/LeoCQM/Leoblog',
+      pattern: 'https://github.com/',
       text: 'Edit this page on GitHub'
     },
     // 设置上下篇文字
