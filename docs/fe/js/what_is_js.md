@@ -1,4 +1,4 @@
-# 吾名 JavaScript :wink:
+# JavaScript 简介
 
 ## JavaScript 和 ECMAScript
 
